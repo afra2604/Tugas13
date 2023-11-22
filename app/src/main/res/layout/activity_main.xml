@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Menu Makanan"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edt_makanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama makanan"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_outline"
+        />
+
+    <EditText
+        android:id="@+id/edt_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Harga"
+        android:inputType="textMultiLine"
+        android:background="@drawable/border_outline"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="30dp"
+            android:text="Tambah Data" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Ubah Data"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
